@@ -1,0 +1,27 @@
+
+button{
+    margin-top: 20px;
+}
+
+.tileset-container {
+    position: relative;
+  }
+  
+  .tileset-selection {
+    position: absolute;
+    outline: 3px solid #e91e63;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+  }
+
+  canvas{
+    background-size: 32px 32px;
+    background-image:
+      linear-gradient(to right, grey 1px, transparent 1px),
+      linear-gradient(to bottom, grey 1px, transparent 1px),
+      linear-gradient(to left, grey 1px, transparent 1px),
+      linear-gradient(to top, grey 1px, transparent 1px);
+  }
+

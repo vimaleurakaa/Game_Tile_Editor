@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Game Tile Map Generator</title>
+</head>
+
+<body>
+
+    <div class="container-fluid" style="padding : 60px">
+        <div class="row">
+            <div class="col-md-3">
+                <div>
+                    <button id="export_img" type="button" class="btn btn-primary">Export Image
+                    </button>
+                </div>
+
+                <div>
+                    <button id="export_json" type="button" class="btn btn-warning">Export JSON
+                    </button>
+                </div>
+
+                <div>
+                    <input type="file" id="files" name="files[]" multiple placeholder="Import JSON" />
+                </div>
+
+                <div class="canvas-input">
+                    <input id="canvas_x" type="number" placeholder="Width" /><br>
+                    <input id="canvas_y" type="number" placeholder="Height" /><br>
+                    <button id="set_canvas_size" type="button" class="btn btn-success">Set New Size</button>
+                    <div id="canvas_error"></div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-header">
+                        Tile Map Generator
+                    </h5>
+                    <div class="card-body">
+                        <canvas width="416" height="416"></canvas>
+                    </div>
+                    <div class=" card-footer">
+                        Created by Vimal Thanikachalam
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="tileset-container">
+                    <img id="tileset-source" />
+                    <div class="tileset-selection"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
