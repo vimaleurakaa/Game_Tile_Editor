@@ -17,6 +17,7 @@ let json = "";
 exportImg.onclick = exportImage;
 
 let currentLayer = 0;
+
 let layers = [
   //Bottom Layers
   {},
@@ -24,6 +25,7 @@ let layers = [
   {},
 ];
 
+//Set Canvas Size
 const setCanvasSize = () => {
   const newWidth = setWidth.value;
   const newHeight = setHeight.value;
@@ -157,12 +159,9 @@ document.getElementById("files").addEventListener("change", impotJSON, false);
 
 function impotJSON(evt) {
   let files = evt.target.files;
-
   let output = [];
   for (let i = 0, f; (f = files[i]); i++) {
     let reader = new FileReader();
-
-    // Closure to capture the file information.
     reader.onload = (function (theFile) {
       return function (e) {
         try {

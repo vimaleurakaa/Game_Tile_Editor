@@ -19,9 +19,9 @@ button{
   canvas{
     background-size: 32px 32px;
     background-image:
-      linear-gradient(to right, grey 1px, transparent 1px),
-      linear-gradient(to bottom, grey 1px, transparent 1px),
-      linear-gradient(to left, grey 1px, transparent 1px),
-      linear-gradient(to top, grey 1px, transparent 1px);
+    linear-gradient(to right, #d6d6d6 1px, transparent 1px),
+    linear-gradient(to bottom, #d6d6d6, transparent 1px),
+    linear-gradient(to left, #d6d6d6 0px, transparent 1px),
+    linear-gradient(to top, #d6d6d6 -1px, transparent 2px)
   }
 
